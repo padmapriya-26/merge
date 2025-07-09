@@ -1,0 +1,13 @@
+pipeline {
+    agent {
+        label 'headche-label'
+    }
+    stages{
+        stage('Maven') {
+            steps {
+                echo "Hello.welcome to maven section"
+                sh "mvn --version"
+            }
+        }
+    }
+}
