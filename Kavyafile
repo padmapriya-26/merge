@@ -3,10 +3,10 @@ pipeline {
         label 'headche-label'
     }
     stages{
-        stage('Maven') {
+        stage('jdk-17') {
             steps {
                 echo "Hello.welcome to maven section"
-                sh "mvn --version"
+                sh "java --version"
             }
         }
     }
