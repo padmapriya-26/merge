@@ -5,14 +5,14 @@ pipeline {
     }
     //tools block at the pipeline level
     tools {
-       jdk 'jdk-21' 
+       maven 'mvn-3' 
     }
     //stage block
     stages {
-        stage('Build') {
+        stage('maven') {
             steps {
-                echo "this is about the java version"
-                sh 'java --version'
+                echo "this is about the maven version"
+                sh 'maven --version'
             }
         }
     }
