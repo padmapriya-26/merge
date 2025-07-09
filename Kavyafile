@@ -1,12 +1,17 @@
 pipeline {
+    //agent block
     agent {
-        label 'headche-label'
+        label "headche-label"
     }
-    stages{
-        stage('jdk-17') {
+    //tools block at the pipeline level
+    tools {
+       java "jdk-17" 
+    }
+    //stage block
+    stages {
+        stage('Build') {
             steps {
-                echo "Hello.welcome to maven section"
-                sh "java --version"
+                echo "this is about the java version"
             }
         }
     }
