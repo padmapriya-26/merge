@@ -5,7 +5,7 @@ pipeline {
     }
     //tools block at the pipeline level
     tools {
-       java 'jdk-17' 
+       java 'jdk-21' 
     }
     //stage block
     stages {
