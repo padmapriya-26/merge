@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "this is about the java version"
+                sh 'java --version'
             }
         }
     }
